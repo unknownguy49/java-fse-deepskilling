@@ -1,0 +1,14 @@
+public class MobileApp implements Observer
+{
+    private StockMarket stockMarket;
+
+    public MobileApp(StockMarket stockMarket)
+    {
+        this.stockMarket=stockMarket;
+    }
+
+    public void update()
+    {
+        System.out.println("Mobile App: Stock price updated to "+stockMarket.getStockPrice());
+    }
+}
